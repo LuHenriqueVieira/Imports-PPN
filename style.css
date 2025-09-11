@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    box-sizing: border-box;
     font-family: "Montserrat";
 }
 
@@ -67,7 +68,7 @@ nav {
         top: 8vh;
         right: 0;
         width: 50vw;
-        height: 92vh;
+        height: 100%;
         background-color: #601682;
         flex-direction: column;
         align-items: center;
@@ -82,6 +83,50 @@ nav {
     }
     .mobile-menu {
         display: block;
+    }
+
+    .produtos {
+        flex-direction: column; /* empilha as colunas */
+        align-items: center;
+        text-align: center;
+    }
+
+    .produtos-info {
+        align-items: center;
+    }
+
+    .produtos-info h1 {
+        font-size: 20px;
+    }
+
+    .preco {
+        font-size: 22px;
+    }
+
+    .contato {
+        text-align: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .img-produto {
+        width: 10vh;
+        justify-content: left;
+        height: auto;
+        max-width: 100vh;
+    }
+
+    .img-banner{
+        width: 100vw;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .h1-produtos {
+        padding-left: 20px;
     }
 }
 
@@ -114,6 +159,53 @@ nav {
 
 /* Fim do Header */
 
+.img-banner {
+    height: auto;
+    width: 100vw;
+
+}
+
+.h1-produtos {
+    padding-left: 20px;
+    color:#601682;
+    padding-top: 50px;
+    font-size: 45px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.bloco-produtos{
+    width: 270px;
+    display: block;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    border: solid 2px, #601682;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+
+.foto-do-produto{
+    margin-top: 10px;
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+}
+
+.produtos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.produtos-container h2 {
+    color: #601682;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 /* Imagem do Produto */
 .produtos {
     display: flex;
@@ -121,7 +213,7 @@ nav {
     gap: 40px;
     margin: 40px auto;
     max-width: 1450px;
-    padding: 20px
+    padding: 20px;
 }
 
 .container-img {
@@ -129,34 +221,17 @@ nav {
     text-align: left;
 }
 
+
 .img-principal {
-    width: 100%;
-    max-width: 200px;
-}
-
-.miniaturas {
-  display: flex;
-  justify-content: left;
-  
-  gap: 10px;
-  margin-top: 15px;
-}
-
-.miniaturas img {
-  width: 60px;
-  height: auto;
-  cursor: pointer;
-  border: 2px solid transparent;
-  border-radius: 8px;
-  transition: 0.3s;
-}
-
-.miniaturas img:hover {
-  border-color: #601682; 
+    width: 10%;
+    max-width: 50px;
+    justify-content: left;
+    display: block;
 }
 
 /* Container - Direita */
 .produtos-info {
+    padding-top: 50px;
     flex:1;
     display: flex;
     flex-direction: column;
@@ -166,6 +241,7 @@ nav {
 .produtos-info h1 {
     font-size: 24px;
     margin-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .preco-produto {
@@ -175,11 +251,13 @@ nav {
 }
 
 .parcelas {
+    padding-top: 4px;
     font-size: 14px;
 }
 
 /* Contato */
 .contato {
+    padding-top: 80px;
     margin-top: 20px;
     padding: 15px;
     border: 1px solid #ddd;
@@ -216,7 +294,7 @@ nav {
 
 .descricao h2 {
     font-size: 22px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 
 .ficha {
@@ -234,3 +312,92 @@ nav {
   border-radius: 8px;
 }
 
+.text-description {
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+.footer-personalizado {
+    background-color: #601682;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    padding: 40px 20px 10px;
+}
+  
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: left;
+}
+  
+.footer-coluna {
+    flex: 1 1 200px;
+    min-width: 200px;
+
+    & h3 {
+        margin-bottom: 8px;
+    }
+}
+  
+.footer-logo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+  
+.footer-descricao {
+    font-size: 14px;
+    max-width: 250px;
+}
+  
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.footer-links li {
+    margin-bottom: 8px;
+}
+  
+.footer-links a {
+    color: white;
+    text-decoration: none;
+
+}
+  
+.footer-links a:hover {
+    text-decoration: underline;
+}
+  
+.icone-rede {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+  
+.footer-rodape {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 10px;
+}
