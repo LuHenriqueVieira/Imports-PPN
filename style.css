@@ -10,10 +10,12 @@
 }
 
 /* Header */
-a {
-    color: #ffffff;
-    text-decoration: none;
-    transition: 0.3s;
+header {
+    & a {
+        color: #ffffff;
+        text-decoration: none;
+        transition: 0.3s;
+    }
 }
 
 a:hover{
@@ -86,7 +88,7 @@ nav {
     }
 
     .produtos {
-        flex-direction: column; /* empilha as colunas */
+        flex-direction: column; 
         align-items: center;
         text-align: center;
     }
@@ -128,6 +130,24 @@ nav {
     .h1-produtos {
         padding-left: 20px;
     }
+
+    .container-post-insta {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .post-insta {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .img-post-insta {
+        width: 40vw;
+        max-width: 150px;
+    }
+
+
 }
 
 .nav-list.active {
@@ -162,7 +182,6 @@ nav {
 .img-banner {
     height: auto;
     width: 100vw;
-
 }
 
 .h1-produtos {
@@ -183,7 +202,7 @@ nav {
     border: solid 2px, #601682;
     border-radius: 20px;
     margin-bottom: 30px;
-    margin-right: 20px;
+    margin: 30px 30px 30px 30px;
 }
 
 .foto-do-produto{
@@ -197,7 +216,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
+
 }
 
 .produtos-container h2 {
@@ -318,10 +337,61 @@ nav {
 
 
 
+/* Container - Instagram */
+.container-instagram {
+    width: 100vw;
+    height: 60vh;
+    background-color: #601682;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+    justify-content: center;
+}
+
+.h2-insta {
+    font-size: 28px;
+    padding-bottom: 30px;
+}
+
+.text-insta {
+    text-align: center;
+    font-size: 20px;
+}
+
+.container-post-insta {
+    padding: 30px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.post-insta {
+    display: flex;
+    width: 45vw;
+
+}
+
+.img-post-insta {
+    width: 10vw;
+    margin: 12px;
+    border-radius: 10px;
+}
+
+.botao-insta {
+    background-color: #fff;
+    color: #601682;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 30px;
+    font-size: 14px;
+}
 
 
-
-
+/* Container - Maps */
+.container-maps {
+    width: 100vw;
+    height: 45vh;
+}
 
 
 
