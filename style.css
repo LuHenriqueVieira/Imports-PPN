@@ -365,10 +365,13 @@ nav {
     margin: 20px;
 }
 
+.card-list {
+    display: flex;
+}
+
 .post-insta {
     display: flex;
     width: 45vw;
-
 }
 
 .img-post-insta {
